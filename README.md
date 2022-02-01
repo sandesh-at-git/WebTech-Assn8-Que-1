@@ -16,4 +16,4 @@
         }
       }
 ```
-#### [Click here](https://sandesh-at-git.github.io/WebTech-Assn8-Que-1/)
+#### [Click here for live solution](https://sandesh-at-git.github.io/WebTech-Assn8-Que-1/)

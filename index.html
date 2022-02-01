@@ -1,0 +1,73 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment-8 | Q-1</title>
+    <style>
+      body {
+        background-color: #008080;
+        color: #ffffff;
+        font-size: 30px;
+      }
+
+      .container {
+        margin: auto;
+        text-align: center;
+      }
+
+      label,
+      input {
+        display: block;
+        margin: 20px auto;
+      }
+
+      input {
+        padding: 10px;
+        width: 400px;
+        font-size: 17px;
+      }
+
+      
+      input::placeholder {
+        font-family: cursive;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <form name="valEmail" action="./responce.html" onsubmit="return validate()">
+        <label for="email">Enter Your Mail below</label>
+
+        <input
+          type="text"
+          name="email"
+          id="email"
+          placeholder="Mail Here...."
+        />
+
+        <input type="submit" id="submitBtn"/>
+      </form>
+    </div>
+
+    <script>
+        // let email = 
+      const expression = /^([\w]*[\w\.]*(?!\.)@gmail.com)/;
+      function validate(){
+        const mail = document.getElementById('email');
+        if(mail.value =='' || expression.test(mail.value) == false){
+          // alert("null value are not allowd");
+          document.querySelector('label').textContent = "Please enter valid email";
+          return false;
+        }
+        else
+        {
+          return true;
+        }
+      }
+     
+    </script>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 # WebTech Assignment 8
 ### Q1- Write a JS function to validate email-id using regular expression.
-### JS function
+### Solution Function 
 ```
  const expression = /^([\w]*[\w\.]*(?!\.)@gmail.com)/;
       function validate(){
@@ -16,3 +16,4 @@
         }
       }
 ```
+#### [Click here](https://sandesh-at-git.github.io/WebTech-Assn8-Que-1/)
